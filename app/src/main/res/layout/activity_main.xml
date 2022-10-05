@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cinza"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:text="App Escolar"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:hint="Nome do aluno"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edtDisciplina"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtNome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="Disciplina"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edtNumAulas"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtDisciplina"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="Número de aulas"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edtNumFaltas"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtNumAulas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="Número de faltas"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edtNota1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtNumFaltas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="Nota 1"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edtNota2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtNota1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="Nota 2"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/edtNota2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Resultado" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Limpar" />
+
+
+</RelativeLayout>
